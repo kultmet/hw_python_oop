@@ -148,7 +148,6 @@ if __name__ == '__main__':
         ('SWM', [720, 1, 80, 25, 40]),
         ('RUN', [15000, 1, 75]),
         ('WLK', [9000, 1, 75, 180]),
-        ('FCK', [1000, 1, 75]),
     ]
 
     for workout_type, data in packages:
