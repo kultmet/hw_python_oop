@@ -134,7 +134,7 @@ def read_package(workout_type: str, data: list[int]) -> Training:
         unpacking = training_catalog[workout_type](*data)
         return unpacking
     except KeyError:
-        quit()
+        raise KeyError
 
 
 def main(training: Training) -> None:
