@@ -1,4 +1,4 @@
-from typing import Dict, ClassVar
+from typing import List, Dict, ClassVar
 
 
 class InfoMessage:
@@ -123,7 +123,7 @@ class Swimming(Training):
                 * self.WEIGHT_COEFF_2 * self.weight)
 
 
-def read_package(workout_type: str, data: list[int]) -> Training:
+def read_package(workout_type: str, data: List[int]) -> Training:
     """Прочитать данные полученные от датчиков."""
     training_catalog: Dict[str, ClassVar] = {
         'SWM': Swimming,
